@@ -1,0 +1,157 @@
+<TaskerData sr="" dvi="1" tv="4.8u1m">
+	<Profile sr="prof24" ve="2">
+		<cdate>1449254104217</cdate>
+		<clp>true</clp>
+		<edate>1457029806049</edate>
+		<id>24</id>
+		<mid0>25</mid0>
+		<mid1>26</mid1>
+		<nme>WifiControl</nme>
+		<Loc sr="con0">
+			<cname>Home</cname>
+			<lat>39.53741455078125</lat>
+			<long>-76.09901428222656</long>
+			<rad>200.0</rad>
+		</Loc>
+	</Profile>
+	<Profile sr="prof3" ve="2">
+		<cdate>1449071741564</cdate>
+		<clp>true</clp>
+		<edate>1452552710859</edate>
+		<id>3</id>
+		<limit>true</limit>
+		<mid0>18</mid0>
+		<mid1>23</mid1>
+		<nme>ProximityLock</nme>
+		<State sr="con0" ve="2">
+			<code>125</code>
+		</State>
+		<State sr="con1" ve="2">
+			<code>142</code>
+			<Str sr="arg0" ve="3">Orientation-StandingUp/Orientation-FaceDown</Str>
+		</State>
+	</Profile>
+	<Profile sr="prof45" ve="2">
+		<cdate>1449970880943</cdate>
+		<clp>true</clp>
+		<edate>1452552709758</edate>
+		<id>45</id>
+		<limit>true</limit>
+		<mid0>46</mid0>
+		<nme>Orientation-StandingUp</nme>
+		<State sr="con0" ve="2">
+			<code>120</code>
+			<Int sr="arg0" val="2"/>
+		</State>
+	</Profile>
+	<Profile sr="prof47" ve="2">
+		<cdate>1449970990355</cdate>
+		<clp>true</clp>
+		<edate>1452552709358</edate>
+		<id>47</id>
+		<limit>true</limit>
+		<mid0>46</mid0>
+		<nme>Orientation-FaceDown</nme>
+		<State sr="con0" ve="2">
+			<code>120</code>
+			<Int sr="arg0" val="1"/>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1449779019911</cdate>
+		<name>ScreenProximityLock</name>
+		<pids>24,45,3,47</pids>
+		<tids>26,46,25,18,23</tids>
+		<Kid sr="Kid">
+			<feat0>android.hardware.sensor.proximity:y</feat0>
+			<launchID>42</launchID>
+			<pkg>com.gmail.michelfrancisb.screenproximitylock</pkg>
+			<vnme>1.0</vnme>
+			<vnum>3</vnum>
+		</Kid>
+		<Img sr="icon" ve="2">
+			<nme>hl_aaa_ext_show</nme>
+		</Img>
+	</Project>
+	<Task sr="task18">
+		<cdate>1449071751213</cdate>
+		<edate>1452552707632</edate>
+		<id>18</id>
+		<nme>ProximityLock</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>16</code>
+		</Action>
+	</Task>
+	<Task sr="task23">
+		<cdate>1449071866586</cdate>
+		<edate>1450226221595</edate>
+		<id>23</id>
+		<nme>ScreenOn</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>11820</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<com.intangibleobject.securesettings.plugin.extra.BLURB>Screen Bright
+5 Seconds</com.intangibleobject.securesettings.plugin.extra.BLURB>
+					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING>wake_device</com.intangibleobject.securesettings.plugin.extra.SETTING>
+					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION>5000</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION-type>java.lang.Long</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_DURATION-type>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE>bright</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE>
+					<com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.WAKE_LOCK_TYPE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Screen Bright
+5 Seconds</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
+			<Str sr="arg2" ve="3">Secure Settings</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task25">
+		<cdate>1449254120012</cdate>
+		<edate>1451494235478</edate>
+		<id>25</id>
+		<nme>WifiOn</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>426</code>
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task26">
+		<cdate>1449254145136</cdate>
+		<edate>1451494237708</edate>
+		<id>26</id>
+		<nme>WifiOff</nme>
+		<Action sr="act0" ve="7">
+			<code>425</code>
+			<Int sr="arg0" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task46">
+		<cdate>1449970900875</cdate>
+		<edate>1449970922895</edate>
+		<id>46</id>
+		<nme>OrientationCheck</nme>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%OrientationCheck</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
